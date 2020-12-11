@@ -45,7 +45,7 @@ start_docker
 
 echo netology > temp.txt
 ansible-playbook -i inventory/prod.yml site.yml --vault-password-file temp.txt
-rm -f temp
+rm -f temp.txt
 
 
 stop_docker
