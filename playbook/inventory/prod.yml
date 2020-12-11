@@ -1,9 +1,19 @@
 ---
   el:
     hosts:
-      centos7:
+      kaa_centos7:
         ansible_connection: docker
   deb:
     hosts:
-      ubuntu:
+      kaa_ubuntu:
         ansible_connection: docker
+  local:
+    hosts:
+      localhost:
+        ansible_connection: local
+  fdr:
+    hosts:
+      kaa_fedora:
+        ansible_connection: docker
+        
+        
